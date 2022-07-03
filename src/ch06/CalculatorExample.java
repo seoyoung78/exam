@@ -14,5 +14,14 @@ public class CalculatorExample {
         System.out.println("result2: "+ result2);
 
         myCalc.powerOff();
+
+        myCalc.execute();
+
+        // 메소드 오버로딩
+        double result3 = myCalc.areaRectangle(10);
+        double result4 = myCalc.areaRectangle(10, 20);
+
+        System.out.println("정사각형 넓이 = " + result3);
+        System.out.println("직사각형 넓이 = " + result4);
     }
 }
