@@ -50,5 +50,16 @@ public class CarExample {
         } else {
             System.out.println("gas를 주입하세요.");
         }
+
+        myCar.setSpeed(-50);
+        System.out.println("현재 속도: " + myCar.getSpeed());
+
+        myCar.setSpeed(60);
+
+        if (myCar.isStop()) {
+            myCar.setStop(true);
+        }
+
+        System.out.println("현재 속도: " + myCar.getSpeed());
     }
 }

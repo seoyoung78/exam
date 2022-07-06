@@ -56,4 +56,28 @@ public class Car {
             }
         }
     }
+
+    boolean stop;
+
+    // Getter
+    public int getSpeed() {
+        return speed;
+    }
+    public boolean isStop() {
+        return stop;
+    }
+
+    // Setter
+    public void setSpeed(int speed) {
+        if (speed < 0) {
+            this.speed = 0;
+            return;
+        } else {
+            this.speed = speed;
+        }
+    }
+    public void setStop(boolean stop) {
+        this.stop = stop;
+        this.speed = 0;
+    }
 }
