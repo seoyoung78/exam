@@ -1,5 +1,7 @@
 package ch07;
 
+import java.util.ArrayList;
+
 public class AnimalExmaple {
     public static void main(String[] args) {
         Dog dog = new Dog();
